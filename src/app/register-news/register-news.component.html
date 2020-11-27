@@ -1,0 +1,35 @@
+<div class="PageForm">
+    <form class="PageForm__formArea" novalidate #frm="ngForm" (ngSubmit)="create(frm)">
+        <h1 class="PageForm__formArea-title">
+            Cadastro de notícias
+        </h1>
+        <hr class="PageForm__formArea-divisor">
+        <fieldset class="PageForm__formArea-section">
+            <label class="PageForm__formArea-section-label" for="name">Título</label>
+            <input 
+                class="PageForm__formArea-section-input" 
+                type="text" 
+                name="name"
+                placeholder="Digite aqui o título da notícia"
+                [(ngModel)]="report.title" required>
+        </fieldset>
+        
+        <fieldset class="PageForm__formArea-section">
+            <legend class="PageForm__formArea-section-legend">Escreva aqui a notícia</legend>
+            <textarea 
+                class="PageForm__formArea-section-textarea" 
+                [(ngModel)]="report.description" required
+                placeholder="Digite aqui a notícia"
+                name="message" 
+                cols="30" 
+                rows="10">
+            </textarea>
+        </fieldset>
+
+        <button
+            [disabled]="frm.invalid" 
+            class="PageForm__button">
+            ENVIAR
+        </button>
+    </form>
+</div>

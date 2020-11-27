@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+.PageForm {
+    width: 100%;
+
+    margin: 0 auto;
+}
+
+.PageForm__formArea {
+    width: 100%;
+
+    margin: 0 auto;
+    padding: 20px;
+
+    background-color: white;
+
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.PageForm__formArea-title {
+    font-size: 2em;
+
+    margin-bottom: 10px;
+}
+
+.PageForm__formArea-divisor {
+    height: 8px;
+    width: 125px;
+    
+    background-color: #569AC4;
+
+    border: none;
+    border-radius: 4px;
+    outline: none;
+
+    margin-bottom: 40px;
+}
+
+.PageForm__formArea-section {
+    width: 100%;
+
+    border: none;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.PageForm__formArea-section-label,
+.PageForm__formArea-section-legend {
+    margin-bottom: 10px;
+
+    font-size: 1.2em;
+}
+
+.PageForm__formArea-section-input {
+    width: 100%;
+    padding: 15px 20px 15px 10px;
+
+    outline: none;
+    border-radius: 8px;
+    border: #ddd 1px solid;
+
+    margin-bottom: 40px;
+
+    font-size: 1em;
+}
+
+.PageForm__formArea-section-textarea {
+    overflow-y: hidden;
+    resize: none;
+
+    border-radius: 8px;
+    border: #ddd 1px solid;
+
+    margin-bottom: 60px;
+    padding: 10px;
+
+    font-size: 1em;
+}
+
+.PageForm__button {
+    padding: 20px 52px;
+
+    background-color: #569AC4;
+    color: white;
+
+    font-size: 0.875em;
+    font-weight: 800;
+
+    border: none;
+    border-radius: 8px;
+}
+
+.PageForm__button:hover {
+    filter: brightness(110%);
+}
+
+@media(min-width: 768px) {
+    .PageForm__formArea {
+        align-items: center;
+    }
+}
+
+
+
+
+

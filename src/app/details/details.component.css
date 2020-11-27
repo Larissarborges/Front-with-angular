@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.PageNews {
+    width: 100%;
+
+    margin: 0 auto;
+
+    background-color: white;
+}
+
+.PageNews__banner {
+    width: 100%;
+    height: 30vw;
+    background-image: url('../../assets/covid.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+}
+
+
+.PageNews__header {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.PageNews__header-link {
+    display: flex;
+
+    color: #569AC4;
+
+    margin: 40px 0;
+}
+
+.PageNews__header-link:hover {
+    filter: brightness(120%);
+}
+
+.PageNews__header-icon {
+    margin-right: 16px;
+    display: flex;
+    background-image: url('../../assets/arrow-left.svg');
+
+    width: 20px;
+    height: 20px;
+}
+
+.PageNews__content {
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.PageNews__Title {
+    margin-bottom: 40px;
+    
+    font-size: 2em;
+    text-align: left;
+}
+
+.PagNews__Body {
+    font-size: 1em;
+
+    text-align: left;
+}
+
+@media(min-width: 1024px) {
+    .PageNews__content {
+        max-width: 500px;
+    }
+}

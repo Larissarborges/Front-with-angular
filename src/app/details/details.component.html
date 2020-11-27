@@ -1,0 +1,18 @@
+<div class="PageNews">
+    <div class="PageNews__banner">
+        <!-- <img class="PageNews__banner-photo" src="../../assets/covid.jpg" alt="Imagem escrita COVID-19 com images de vírus"> -->
+    </div>
+    <div class="PageNews__header">
+        <a href="/" class="PageNews__header-link">
+            <span class="PageNews__header-icon"></span>
+            Voltar para home</a>
+    </div>
+    <div *ngIf="item" class="PageNews__content">
+        <h1 class="PageNews__Title">
+            {{ item.title }}
+        </h1>
+        <div class="PagNews__Body">
+            {{ item.body }}
+        </div>
+    </div>
+</div>
